@@ -208,6 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 50832708}
+  - component: {fileID: 50832709}
   m_Layer: 0
   m_Name: PlayerHealthBar Controls
   m_TagString: Untagged
@@ -230,6 +231,44 @@ Transform:
   m_Father: {fileID: 1673167139}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50832709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50832707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe991c185b13c44b8a51c385ee61ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toggleHealthBar: 0
+  _toggleManaBar: 0
+  _toggleExpBar: 0
+  _healthBarFrame: {fileID: 0}
+  _healthBarBackground: {fileID: 0}
+  _healthBarCurrent: {fileID: 0}
+  _animateHealthBar: 0
+  _manaBarFrame: {fileID: 0}
+  _manaBarBackground: {fileID: 0}
+  _manaBarCurrent: {fileID: 0}
+  _animateManaBar: 0
+  _expBarFrame: {fileID: 0}
+  _expBarBackground: {fileID: 0}
+  _expBarCurrent: {fileID: 0}
+  _animateExpBar: 0
+  _healthAnchorPostitions: 4
+  _manaAnchorPostitions: 4
+  _expAnchorPostitions: 4
+  _frameX: 0
+  _frameY: 0
+  _frameXScale: 0
+  _frameYScale: 0
+  _mapX: 0
+  _mapY: 0
+  _mapXScale: 0
+  _mapYScale: 0
 --- !u!1 &85364020
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +724,15 @@ MonoBehaviour:
   _miniMapFrame: {fileID: 0}
   _miniMapTexture: {fileID: 0}
   _renderCamera: {fileID: 0}
-  _framePosition: {fileID: 0}
+  _anchorPostitions: 4
+  _frameX: 0
+  _frameY: 0
+  _frameXScale: 0
+  _frameYScale: 0
+  _mapX: 0
+  _mapY: 0
+  _mapXScale: 0
+  _mapYScale: 0
 --- !u!1 &275349251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,8 +1928,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430622567}
+  - component: {fileID: 430622568}
   m_Layer: 0
-  m_Name: ' ActionBar Controls'
+  m_Name: ActionBar Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1903,6 +1951,19 @@ Transform:
   m_Father: {fileID: 1673167139}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &430622568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430622566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40879f4c26857134db464e5d6cf8d920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _test: 0
 --- !u!1 &432167857
 GameObject:
   m_ObjectHideFlags: 0

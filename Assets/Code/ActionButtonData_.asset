@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f0a4f36a2d2c648aebe9262f02f0c3, type: 3}
   m_Name: ActionButtonData_
   m_EditorClassIdentifier: 
-  _actionType: 0
+  _actionName: 
+  _actionType: 1
   _actionFrame: {fileID: 0}
   _actionIcon: {fileID: 0}
+  _floatValue: 0
+  _cooldown: 0

@@ -13,13 +13,31 @@ public class MiniMapControls : MonoBehaviour
     [Tooltip("Changes base map shape")]
     public MinimapShape _minimapShape = MinimapShape.None;
 
+    [Seperator()]
+
     [Header("Change Graphic Assets")]
     [SerializeField] public Image _miniMapFrame;
     [SerializeField] public Image _miniMapTexture;
     [SerializeField] public Camera _renderCamera;
 
-    [Header("Move & Scale")]
-    [SerializeField] public Transform _framePosition;
+    [Seperator()]
+
+    [Header("Anchor Position")]
+    public AnchorPostitions _anchorPostitions = AnchorPostitions.TopRight;
+
+    [Header("Map Frame Move & Scale")]
+    public float _frameX;
+    public float _frameY;
+    public float _frameXScale;
+    public float _frameYScale;
+
+    [Header("Map Move & Scale")]
+    public float _mapX;
+    public float _mapY;
+    public float _mapXScale;
+    public float _mapYScale;
+
+    
 
     /*
      * for later
@@ -29,5 +47,5 @@ public class MiniMapControls : MonoBehaviour
      *      toggle off/on whatever shape it is
      * }
      */
-    
+
 }
