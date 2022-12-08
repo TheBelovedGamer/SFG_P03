@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+[ExecuteInEditMode]
 public class PlayerHealthBarControls : MonoBehaviour
 {
     [Header("Customize Player Health, Mana, & EXP Bars")]
@@ -40,9 +40,9 @@ public class PlayerHealthBarControls : MonoBehaviour
     [Seperator()]
 
     [Header("Anchor Positions")]
-    public AnchorPostitions _healthAnchorPostitions = AnchorPostitions.BottomCenter;
-    public AnchorPostitions _manaAnchorPostitions = AnchorPostitions.BottomCenter;
-    public AnchorPostitions _expAnchorPostitions = AnchorPostitions.BottomCenter;
+    public AnchorPostitions _healthAnchorPostitions = AnchorPostitions.TopLeft;
+    public AnchorPostitions _manaAnchorPostitions = AnchorPostitions.TopLeft;
+    public AnchorPostitions _expAnchorPostitions = AnchorPostitions.TopLeft;
 
 
     [Header("Map Frame Move & Scale")]

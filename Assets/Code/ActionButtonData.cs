@@ -11,8 +11,8 @@ public class ActionButtonData : ScriptableObject
     public ActionType _actionType = ActionType.None;
 
     [Header("Change Graphic Assets")]
-    [SerializeField] public Image _actionFrame;
-    [SerializeField] public Image _actionIcon;
+    [SerializeField] public Sprite _actionFrameSprite;
+    [SerializeField] public Sprite _actionIconSprite;
 
     [Header("Changable Variables")]
     public float _floatValue;
