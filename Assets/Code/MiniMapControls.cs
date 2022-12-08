@@ -19,9 +19,7 @@ public class MiniMapControls : MonoBehaviour
 
     [Header("Change Camera Settings")]
     public Camera _renderCamera;
-    public float _cameraHeight;
-    public float _cameraSize;
-
+    public float _cameraHeight = 15f;
 
     [Seperator()]
 
@@ -45,6 +43,7 @@ public class MiniMapControls : MonoBehaviour
         ToggleGraphics();
         MoveFrame();
         MoveMap();
+        MoveCamera();
     }
 
     private void ToggleGraphics()
@@ -65,7 +64,7 @@ public class MiniMapControls : MonoBehaviour
 
         _frameMove = _miniMapFrameObject.GetComponent<RectTransform>();
 
-        _frameMove.position = new Vector2(_frameX, _frameY);
+        _frameMove.localPosition = new Vector2(_frameX, _frameY);
         _frameMove.localScale = new Vector2(_frameXScale/100, _frameYScale/100);
     }
 
@@ -75,8 +74,19 @@ public class MiniMapControls : MonoBehaviour
 
         _mapMove = _miniMapRenderObject.GetComponent<RectTransform>();
 
-        _mapMove.position = new Vector2(_mapX, _mapY);
+        _mapMove.localPosition = new Vector2(_mapX, _mapY);
         _mapMove.localScale = new Vector2(_mapXScale/100, _mapYScale/100);
+
+    }
+
+    private void MoveCamera()
+    {
+        Vector3 camPOS;
+
+        camPOS = _renderCamera.transform.position;
+        camPOS.y = _cameraHeight;
+
+        _renderCamera.transform.position = camPOS;
 
     }
 }
