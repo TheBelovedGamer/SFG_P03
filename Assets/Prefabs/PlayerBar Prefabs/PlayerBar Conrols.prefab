@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4366707071933389410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4366707071933389413}
+  - component: {fileID: 4366707071933389412}
+  m_Layer: 0
+  m_Name: PlayerBar Conrols
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4366707071933389413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4366707071933389410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4366707071933389412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4366707071933389410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe991c185b13c44b8a51c385ee61ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _HealthBar: {fileID: 0}
+  _HealthFrame: {fileID: 0}
+  _ManaBar: {fileID: 0}
+  _ManaFrame: {fileID: 0}
+  _EXPBar: {fileID: 0}
+  _EXPFrame: {fileID: 0}
+  _toggleHealthBar: 1
+  _toggleManaBar: 1
+  _toggleExpBar: 1
+  _healthFrameX: 86.3
+  _healthFrameY: 32.5
+  _healthFrameXScale: 100
+  _healthFrameYScale: 100
+  _healthBarX: 0
+  _healthBarY: 0
+  _healthBarXScale: 100
+  _healthBarYScale: 100
+  _manaFrameX: 75.6
+  _manaFrameY: -12.9
+  _manaFrameXScale: 100
+  _manaFrameYScale: 100
+  _manaBarX: 0
+  _manaBarY: 0
+  _manaBarXScale: 100
+  _manaBarYScale: 100
+  _expFrameX: 75.54
+  _expFrameY: -43.65
+  _expFrameXScale: 100
+  _expFrameYScale: 100
+  _expBarX: 0
+  _expBarpY: 0
+  _expBarXScale: 100
+  _expBarYScale: 100
